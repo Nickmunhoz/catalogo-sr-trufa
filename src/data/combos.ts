@@ -20,7 +20,7 @@ export const combos: Combo[] = [
   {
     id: "amor-premium",
     nome: "Amor Premium",
-    preco: 75.0,
+    preco: 70.0,
     curto:
       "A nossa peça-prima. Caneca de alça em coração e interior vermelho vivo — daquelas que a pessoa olha e já entende o recado. Dentro, 3 trufas artesanais com casca que estala e recheio cremoso, na caixinha “love” com laço e tag para você assinar.",
     inclui: [

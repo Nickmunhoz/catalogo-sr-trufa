@@ -56,9 +56,9 @@ export function HowItWorks() {
         <div className="mt-10 flex items-start gap-3 rounded-2xl border-2 border-dourado/60 bg-dourado-soft/30 p-5 sm:p-6">
           <Clock className="mt-0.5 h-5 w-5 shrink-0 text-dourado" />
           <p className="text-sm text-marrom sm:text-base">
-            <strong>Pedidos COM FOTO só até segunda-feira, 08/06.</strong> A sublimação
-            leva tempo (impressão, secagem e prensagem a 200°C). Após essa data: frase
-            especial ou arte pronta da loja.
+            <strong>Pedidos COM FOTO só até quinta-feira, 11/06, às 17h.</strong> A
+            sublimação leva tempo (impressão, secagem e prensagem a 200°C). Após esse
+            horário: frase especial ou arte pronta da loja.
           </p>
         </div>
       </div>

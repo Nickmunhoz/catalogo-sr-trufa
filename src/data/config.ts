@@ -20,7 +20,7 @@ export const config = {
   estoqueCanecaCoracao: 11,
 
   /** Prazo-limite para pedidos com foto (sublimação). Editável para campanhas futuras. */
-  limiteFoto: "2026-06-08T23:59:59",
+  limiteFoto: "2026-06-11T17:00:00",
 };
 
 /** Retorna true enquanto a personalização com foto ainda estiver dentro do prazo. */

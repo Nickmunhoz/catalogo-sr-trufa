@@ -60,8 +60,8 @@ export function Footer() {
             </a>
           </div>
           <p className="mt-4 text-xs text-creme/60">
-            ⏰ Personalização com foto só até segunda, 08/06. Após essa data, frase ou
-            arte pronta.
+            ⏰ Personalização com foto só até quinta, 11/06, às 17h. Após isso, frase
+            ou arte pronta.
           </p>
         </div>
       </div>

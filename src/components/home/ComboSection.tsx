@@ -57,7 +57,7 @@ export function ComboSection() {
                   Montar Meu Combo
                 </button>
                 <p className="mt-3 text-center text-xs text-marrom-soft">
-                  Personalização com foto até segunda, 08/06. Depois, frase ou arte pronta.
+                  Personalização com foto até quinta, 11/06 (17h). Depois, frase ou arte pronta.
                 </p>
               </div>
             </article>

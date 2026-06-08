@@ -24,12 +24,12 @@ export function ProductCarousel({ images, alt }: { images: string[]; alt: string
           {images.map((src, i) => (
             <div key={i} className="min-w-0 flex-[0_0_100%]">
               {/* object-contain + padding: produto sempre completo, centralizado, com respiro */}
-              <div className="aspect-square w-full bg-creme-soft">
+              <div className="aspect-square w-full bg-white">
                 <img
                   src={src}
                   alt={`${alt} – foto ${i + 1}`}
                   loading="lazy"
-                  className="h-full w-full object-contain p-2 sm:p-3"
+                  className="h-full w-full object-contain p-3 sm:p-4"
                 />
               </div>
             </div>

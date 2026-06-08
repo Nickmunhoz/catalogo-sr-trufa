@@ -7,12 +7,12 @@ export function Hero({ campanha }: { campanha: boolean }) {
       <img
         src={heroBg}
         alt="Kit Sr. Trufa: caneca personalizada e trufas artesanais"
-        className="absolute inset-0 h-full w-full object-cover object-center"
+        className="absolute inset-0 h-full w-full object-cover object-[70%_center]"
         width={1376}
         height={768}
       />
       {/* Degradês na cor da página revelando a imagem */}
-      <div className="absolute inset-0 bg-gradient-to-r from-creme via-creme/90 to-creme/10 sm:via-creme/80 sm:to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-r from-creme via-creme/85 to-creme/30 sm:from-creme sm:via-creme/45 sm:via-45% sm:to-transparent" />
       <div className="absolute inset-0 bg-gradient-to-t from-creme via-creme/35 to-transparent" />
 
       <div className="relative mx-auto flex min-h-[78vh] max-w-6xl items-center px-4 py-16 sm:min-h-[80vh] lg:min-h-[82vh]">

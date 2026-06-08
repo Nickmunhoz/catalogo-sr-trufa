@@ -216,7 +216,7 @@ export function ComboModal({ combo, onClose }: { combo: Combo; onClose: () => vo
                 title="Com foto do casal"
                 hint={
                   fotoOk
-                    ? "Disponível até segunda, 08/06."
+                    ? "Disponível até quinta, 11/06, às 17h."
                     : "Prazo encerrado — escolha frase ou arte da loja."
                 }
               />
