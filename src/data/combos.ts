@@ -1,5 +1,4 @@
 import amor1 from "@/assets/img/combos/combo-amor-premium-01.jpeg";
-import amor2 from "@/assets/img/combos/combo-amor-premium-02.jpeg";
 import especial1 from "@/assets/img/combos/combo-especial-namorados-01.jpeg";
 import especial2 from "@/assets/img/combos/combo-especial-namorados-02.jpeg";
 import canecaCoracao from "@/assets/img/canecas/caneca-coracao.jpeg";
@@ -29,7 +28,7 @@ export const combos: Combo[] = [
       "Caixa presente “love” + laço + tag",
     ],
     // Carrossel do combo da CANECA DE CORAÇÃO: kit montado, caneca de coração e a caixinha.
-    fotos: [amor1, amor2, canecaCoracao, caixaFrente],
+    fotos: [amor1, canecaCoracao, caixaFrente],
   },
   {
     id: "especial-namorados",
