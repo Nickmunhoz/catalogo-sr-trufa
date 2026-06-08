@@ -19,7 +19,7 @@ export function TruffleSection() {
             width={1280}
             height={1280}
             loading="lazy"
-            className="aspect-square w-full bg-white object-contain p-4 transition duration-700 group-hover:scale-105"
+            className="aspect-video w-full object-cover transition duration-700 group-hover:scale-105"
           />
           <span className="absolute bottom-4 left-4 rounded-full bg-marrom/85 px-3 py-1.5 text-xs font-semibold text-creme">
             Clique para escolher seus sabores

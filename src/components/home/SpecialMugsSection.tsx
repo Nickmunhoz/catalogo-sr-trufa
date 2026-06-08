@@ -25,7 +25,7 @@ export function SpecialMugsSection() {
               key={m.id}
               className="overflow-hidden rounded-2xl border border-dourado/30 bg-creme shadow-sm transition hover:shadow-lg"
             >
-              <ProductCarousel images={m.fotos} alt={m.nome} />
+              <ProductCarousel images={m.fotos} alt={m.nome} aspect="portrait" />
               <div className="p-5">
                 <div className="flex flex-wrap gap-1.5">
                   <span className="rounded-full bg-marrom px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-creme">

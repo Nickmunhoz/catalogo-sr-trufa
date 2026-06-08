@@ -20,14 +20,14 @@ export function MugsAvulsasSection() {
               key={m.id}
               className="overflow-hidden rounded-2xl border border-dourado/30 bg-creme-soft shadow-sm transition hover:shadow-lg"
             >
-              <div className="aspect-square bg-white">
+              <div className="aspect-[4/3] bg-creme-soft">
                 <img
                   src={m.foto}
                   alt={m.nome}
-                  width={1024}
-                  height={1024}
+                  width={1376}
+                  height={768}
                   loading="lazy"
-                  className="h-full w-full object-contain p-3"
+                  className="h-full w-full object-cover"
                 />
               </div>
               <div className="p-6">

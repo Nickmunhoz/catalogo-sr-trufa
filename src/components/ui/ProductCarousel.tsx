@@ -2,7 +2,16 @@ import useEmblaCarousel from "embla-carousel-react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useCallback, useEffect, useState } from "react";
 
-export function ProductCarousel({ images, alt }: { images: string[]; alt: string }) {
+export function ProductCarousel({
+  images,
+  alt,
+  aspect = "video",
+}: {
+  images: string[];
+  alt: string;
+  aspect?: "video" | "portrait";
+}) {
+  const aspectClass = aspect === "portrait" ? "aspect-[3/4]" : "aspect-video";
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
   const [selected, setSelected] = useState(0);
 
@@ -23,13 +32,12 @@ export function ProductCarousel({ images, alt }: { images: string[]; alt: string
         <div className="flex">
           {images.map((src, i) => (
             <div key={i} className="min-w-0 flex-[0_0_100%]">
-              {/* object-contain + padding: produto sempre completo, centralizado, com respiro */}
-              <div className="aspect-square w-full bg-white">
+              <div className={`${aspectClass} w-full bg-creme-soft`}>
                 <img
                   src={src}
                   alt={`${alt} – foto ${i + 1}`}
                   loading="lazy"
-                  className="h-full w-full object-contain p-3 sm:p-4"
+                  className="h-full w-full object-cover"
                 />
               </div>
             </div>
