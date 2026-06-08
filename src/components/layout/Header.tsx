@@ -1,5 +1,6 @@
 import { Instagram } from "lucide-react";
 import { config } from "@/data/config";
+import logo from "@/assets/img/brand/logo.png";
 
 export function Header() {
   return (
@@ -15,17 +16,14 @@ export function Header() {
           <Instagram className="h-5 w-5" />
         </a>
 
-        <a
-          href="#topo"
-          aria-label="Sr. Trufa — início"
-          className="flex flex-col items-center leading-none"
-        >
-          <span className="font-display text-xl tracking-wide text-creme sm:text-2xl">
-            Sr. Trufa
-          </span>
-          <span className="mt-0.5 text-[9px] font-semibold uppercase tracking-[0.25em] text-dourado-soft sm:text-[10px]">
-            Artesanal
-          </span>
+        <a href="#topo" aria-label="Sr. Trufa — início" className="flex items-center">
+          <img
+            src={logo}
+            alt="Sr. Trufa"
+            className="h-10 w-auto sm:h-12"
+            width={519}
+            height={194}
+          />
         </a>
 
         <a

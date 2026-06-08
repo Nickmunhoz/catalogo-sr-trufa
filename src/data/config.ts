@@ -6,12 +6,12 @@ export const config = {
   /** Liga/desliga o layout sazonal de Dia dos Namorados (Hero romântico, escassez e combos). */
   CAMPANHA_NAMORADOS: true,
 
-  /** WhatsApp do vendedor — formato internacional, só números (DDI+DDD+numero). {DEFINIR} */
-  whatsapp: "5517999999999",
+  /** WhatsApp do vendedor — formato internacional, só números (DDI+DDD+numero). */
+  whatsapp: "5517996212158",
 
-  /** Instagram. {DEFINIR} */
-  instagramUrl: "https://instagram.com/srtrufa",
-  instagramHandle: "@srtrufa",
+  /** Instagram. */
+  instagramUrl: "https://instagram.com/srtrufa.oficial",
+  instagramHandle: "@srtrufa.oficial",
 
   /** Cidade de operação. */
   cidade: "Barretos/SP",

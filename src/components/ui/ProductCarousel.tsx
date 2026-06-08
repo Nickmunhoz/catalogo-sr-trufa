@@ -29,7 +29,7 @@ export function ProductCarousel({ images, alt }: { images: string[]; alt: string
                   src={src}
                   alt={`${alt} – foto ${i + 1}`}
                   loading="lazy"
-                  className="h-full w-full object-contain p-5 sm:p-6"
+                  className="h-full w-full object-contain p-2 sm:p-3"
                 />
               </div>
             </div>

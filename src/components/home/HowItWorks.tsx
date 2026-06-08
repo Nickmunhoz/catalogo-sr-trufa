@@ -1,4 +1,5 @@
 import { Clock } from "lucide-react";
+import mascote from "@/assets/img/brand/mascote.png";
 
 const STEPS = [
   {
@@ -22,6 +23,15 @@ export function HowItWorks() {
   return (
     <section className="bg-creme py-16 sm:py-24">
       <div className="mx-auto max-w-6xl px-4">
+        {/* Mascote andando sobre o título */}
+        <div className="relative mx-auto h-16 max-w-md sm:h-20">
+          <img
+            src={mascote}
+            alt=""
+            aria-hidden="true"
+            className="animate-walk absolute bottom-0 h-16 w-auto drop-shadow-[0_8px_12px_rgba(44,26,20,0.3)] sm:h-20"
+          />
+        </div>
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="font-display text-3xl text-marrom sm:text-4xl">
             Como o seu presente fica pronto

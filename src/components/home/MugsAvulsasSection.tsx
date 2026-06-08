@@ -27,7 +27,7 @@ export function MugsAvulsasSection() {
                   width={1024}
                   height={1024}
                   loading="lazy"
-                  className="h-full w-full object-contain p-6"
+                  className="h-full w-full object-contain p-3"
                 />
               </div>
               <div className="p-6">

@@ -56,9 +56,54 @@
   animation: pulse-scarcity 1.8s ease-in-out infinite;
 }
 
+/* Mascote girando (tela de carregamento) */
+@keyframes spin-mascote {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.animate-spin-mascote {
+  animation: spin-mascote 1.1s linear infinite;
+}
+
+/* Mascote andando sob o título */
+@keyframes walk {
+  0% {
+    left: 2%;
+    transform: translateY(0) rotate(-3deg) scaleX(1);
+  }
+  20% {
+    transform: translateY(-6px) rotate(2deg) scaleX(1);
+  }
+  45% {
+    left: 80%;
+    transform: translateY(0) rotate(3deg) scaleX(1);
+  }
+  50% {
+    left: 80%;
+    transform: translateY(0) rotate(0) scaleX(-1);
+  }
+  70% {
+    transform: translateY(-6px) rotate(-2deg) scaleX(-1);
+  }
+  95% {
+    left: 2%;
+    transform: translateY(0) rotate(-3deg) scaleX(-1);
+  }
+  100% {
+    left: 2%;
+    transform: translateY(0) rotate(-3deg) scaleX(1);
+  }
+}
+.animate-walk {
+  animation: walk 7s ease-in-out infinite;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .animate-fade-up,
-  .animate-pulse-scarcity {
+  .animate-pulse-scarcity,
+  .animate-walk,
+  .animate-spin-mascote {
     animation: none;
   }
 }

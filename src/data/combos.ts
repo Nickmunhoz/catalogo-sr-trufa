@@ -2,10 +2,10 @@ import amor1 from "@/assets/img/combos/combo-amor-premium-01.jpeg";
 import amor2 from "@/assets/img/combos/combo-amor-premium-02.jpeg";
 import especial1 from "@/assets/img/combos/combo-especial-namorados-01.jpeg";
 import especial2 from "@/assets/img/combos/combo-especial-namorados-02.jpeg";
+import canecaCoracao from "@/assets/img/canecas/caneca-coracao.jpeg";
+import canecaBranca from "@/assets/img/canecas/caneca-branca.jpeg";
 import caixaFrente from "@/assets/img/caixa/caixa-fechada-frente.jpeg";
 import caixaTag from "@/assets/img/caixa/caixa-fechada-tag.jpeg";
-import caixaAbertaTop from "@/assets/img/caixa/caixa-aberta-top.jpeg";
-import caixaAberta01 from "@/assets/img/caixa/caixa-aberta-01.jpeg";
 
 export type Combo = {
   id: string;
@@ -28,7 +28,8 @@ export const combos: Combo[] = [
       "3 trufas artesanais à sua escolha",
       "Caixa presente “love” + laço + tag",
     ],
-    fotos: [amor1, amor2, caixaFrente, caixaAbertaTop],
+    // Carrossel do combo da CANECA DE CORAÇÃO: kit montado, caneca de coração e a caixinha.
+    fotos: [amor1, amor2, canecaCoracao, caixaFrente],
   },
   {
     id: "especial-namorados",
@@ -41,6 +42,7 @@ export const combos: Combo[] = [
       "3 trufas artesanais à sua escolha",
       "Caixa presente “love” + laço + tag",
     ],
-    fotos: [especial1, especial2, caixaTag, caixaAberta01],
+    // Carrossel do combo da CANECA BRANCA: kit montado, caneca branca e a caixinha.
+    fotos: [especial1, especial2, canecaBranca, caixaTag],
   },
 ];
