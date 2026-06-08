@@ -1,5 +1,6 @@
 import { Instagram } from "lucide-react";
 import { config } from "@/data/config";
+import { buildWhatsappUrl, mensagemGeral } from "@/lib/whatsapp";
 import logo from "@/assets/img/brand/logo.png";
 
 export function Header() {
@@ -27,7 +28,7 @@ export function Header() {
         </a>
 
         <a
-          href={`https://wa.me/${config.whatsapp}`}
+          href={buildWhatsappUrl([mensagemGeral])}
           target="_blank"
           rel="noreferrer noopener"
           className="rounded-full bg-laranja px-3 py-2 text-xs font-semibold text-creme shadow-sm transition hover:bg-laranja-deep sm:px-4 sm:text-sm"

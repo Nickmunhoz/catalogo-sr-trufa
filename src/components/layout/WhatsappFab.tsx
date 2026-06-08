@@ -1,10 +1,10 @@
 import { MessageCircle } from "lucide-react";
-import { config } from "@/data/config";
+import { buildWhatsappUrl, mensagemGeral } from "@/lib/whatsapp";
 
 export function WhatsappFab() {
   return (
     <a
-      href={`https://wa.me/${config.whatsapp}`}
+      href={buildWhatsappUrl([mensagemGeral])}
       target="_blank"
       rel="noreferrer noopener"
       aria-label="Falar no WhatsApp"

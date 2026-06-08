@@ -1,5 +1,6 @@
 import { Instagram, MessageCircle } from "lucide-react";
 import { config } from "@/data/config";
+import { buildWhatsappUrl, mensagemGeral } from "@/lib/whatsapp";
 
 export function Footer() {
   return (
@@ -43,7 +44,7 @@ export function Footer() {
           <h4 className="font-display text-lg text-dourado-soft">Fale com a gente</h4>
           <div className="mt-3 flex flex-col gap-2 text-sm">
             <a
-              href={`https://wa.me/${config.whatsapp}`}
+              href={buildWhatsappUrl([mensagemGeral])}
               target="_blank"
               rel="noreferrer noopener"
               className="inline-flex items-center gap-2 text-creme hover:text-dourado-soft"
