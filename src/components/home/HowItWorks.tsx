@@ -5,12 +5,12 @@ const STEPS = [
   {
     n: "1",
     t: "Escolha",
-    d: "O combo do Dia dos Namorados ou as trufas avulsas — você decide.",
+    d: "Um kit presente, trufas avulsas ou uma caneca — você decide.",
   },
   {
     n: "2",
-    t: "Monte",
-    d: "Selecione as 3 trufas e personalize a caneca (foto, frase ou arte da loja).",
+    t: "Personalize",
+    d: "Monte os sabores e personalize a caneca com foto, frase ou arte da loja.",
   },
   {
     n: "3",
@@ -34,7 +34,7 @@ export function HowItWorks() {
         </div>
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="font-display text-3xl text-marrom sm:text-4xl">
-            Como o seu presente fica pronto
+            Como o seu pedido fica pronto
           </h2>
         </div>
 
@@ -56,9 +56,9 @@ export function HowItWorks() {
         <div className="mt-10 flex items-start gap-3 rounded-2xl border-2 border-dourado/60 bg-dourado-soft/30 p-5 sm:p-6">
           <Clock className="mt-0.5 h-5 w-5 shrink-0 text-dourado" />
           <p className="text-sm text-marrom sm:text-base">
-            <strong>Pedidos COM FOTO só até quinta-feira, 11/06, às 17h.</strong> A
-            sublimação leva tempo (impressão, secagem e prensagem a 200°C). Após esse
-            horário: frase especial ou arte pronta da loja.
+            <strong>Pedidos com foto:</strong> a personalização por sublimação (impressão,
+            secagem e prensagem a 200°C) leva alguns dias. Combine o prazo certinho com a
+            gente no WhatsApp.
           </p>
         </div>
       </div>

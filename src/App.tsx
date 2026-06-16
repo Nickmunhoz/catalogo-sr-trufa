@@ -3,28 +3,32 @@ import { Footer } from "@/components/layout/Footer";
 import { WhatsappFab } from "@/components/layout/WhatsappFab";
 import { LoadingScreen } from "@/components/layout/LoadingScreen";
 import { Hero } from "@/components/home/Hero";
-import { ScarcityBar } from "@/components/home/ScarcityBar";
+import { AnnouncementBar } from "@/components/home/AnnouncementBar";
 import { ComboSection } from "@/components/home/ComboSection";
 import { TruffleSection } from "@/components/home/TruffleSection";
 import { MugsAvulsasSection } from "@/components/home/MugsAvulsasSection";
 import { SpecialMugsSection } from "@/components/home/SpecialMugsSection";
+import { OcasioesSection } from "@/components/home/OcasioesSection";
+import { NossaHistoriaSection } from "@/components/home/NossaHistoriaSection";
 import { HowItWorks } from "@/components/home/HowItWorks";
-import { config } from "@/data/config";
+import { FaqSection } from "@/components/home/FaqSection";
 
 export function App() {
-  const campanha = config.CAMPANHA_NAMORADOS;
   return (
     <div className="min-h-screen bg-creme text-marrom">
       <LoadingScreen />
       <Header />
+      <AnnouncementBar />
       <main>
-        <Hero campanha={campanha} />
-        {campanha && <ScarcityBar />}
-        {campanha && <ComboSection />}
+        <Hero />
+        <ComboSection />
         <TruffleSection />
         <MugsAvulsasSection />
         <SpecialMugsSection />
+        <OcasioesSection />
+        <NossaHistoriaSection />
         <HowItWorks />
+        <FaqSection />
       </main>
       <Footer />
       <WhatsappFab />

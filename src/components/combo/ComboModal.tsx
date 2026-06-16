@@ -63,14 +63,14 @@ export function ComboModal({ combo, onClose }: { combo: Combo; onClose: () => vo
       .join(", ");
     const arteLinha =
       arte === "foto"
-        ? "Com foto do casal"
+        ? "Com a sua foto"
         : arte === "frase"
           ? `Com frase — "${frase.trim()}"`
           : "Arte padrão da loja";
     const linhas = [
       "Olá, Sr. Trufa! Quero fazer um pedido 💛",
       "",
-      `🎁 Combo: ${combo.nome} (${formatBRL(combo.preco)})`,
+      `🎁 Kit: ${combo.nome} (${formatBRL(combo.preco)})`,
       `🍫 Trufas: ${trufasLinha}`,
       `🎨 Arte: ${arteLinha}`,
       "",
@@ -84,7 +84,7 @@ export function ComboModal({ combo, onClose }: { combo: Combo; onClose: () => vo
     <div
       role="dialog"
       aria-modal="true"
-      aria-label={`Montar combo ${combo.nome}`}
+      aria-label={`Montar kit ${combo.nome}`}
       className="fixed inset-0 z-50 flex items-end justify-center bg-marrom/60 p-0 sm:items-center sm:p-4"
       onClick={onClose}
     >
@@ -95,7 +95,7 @@ export function ComboModal({ combo, onClose }: { combo: Combo; onClose: () => vo
         <header className="flex items-start justify-between gap-4 border-b border-dourado/30 bg-creme-soft px-5 py-4 sm:px-7">
           <div>
             <p className="text-xs font-semibold uppercase tracking-wider text-marrom-soft">
-              Monte seu combo
+              Monte seu kit
             </p>
             <h3 className="mt-0.5 font-display text-2xl text-marrom">{combo.nome}</h3>
           </div>
@@ -213,11 +213,11 @@ export function ComboModal({ combo, onClose }: { combo: Combo; onClose: () => vo
                 checked={arte === "foto"}
                 disabled={!fotoOk}
                 onClick={() => fotoOk && setArte("foto")}
-                title="Com foto do casal"
+                title="Com a sua foto"
                 hint={
                   fotoOk
-                    ? "Disponível até quinta, 11/06, às 17h."
-                    : "Prazo encerrado — escolha frase ou arte da loja."
+                    ? "Combinamos o prazo de produção no WhatsApp."
+                    : "No momento, escolha frase ou arte da loja."
                 }
               />
               <OptionRow
@@ -233,7 +233,7 @@ export function ComboModal({ combo, onClose }: { combo: Combo; onClose: () => vo
                       maxLength={60}
                       value={frase}
                       onChange={(e) => setFrase(e.target.value)}
-                      placeholder='Ex.: "Te amo desde o primeiro gole"'
+                      placeholder='Ex.: "Feito com carinho pra você"'
                       className="w-full rounded-lg border border-dourado/40 bg-creme px-3 py-2 text-sm text-marrom placeholder:text-marrom-soft/60 focus:border-dourado focus:outline-none"
                     />
                     <div className="mt-1 text-right text-[11px] text-marrom-soft">
@@ -254,7 +254,7 @@ export function ComboModal({ combo, onClose }: { combo: Combo; onClose: () => vo
 
         <footer className="border-t border-dourado/30 bg-creme-soft px-5 py-4 sm:px-7">
           <div className="mb-3 flex items-center justify-between text-sm">
-            <span className="text-marrom-soft">Total do combo</span>
+            <span className="text-marrom-soft">Total do kit</span>
             <span className="font-display text-xl font-bold text-dourado">
               {formatBRL(combo.preco)}
             </span>

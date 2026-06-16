@@ -1,11 +1,8 @@
 /**
- * Configuração central da loja.
+ * Configuração central da loja (catálogo padrão).
  * Para atualizar a página, edite estes valores e faça um novo deploy.
  */
 export const config = {
-  /** Liga/desliga o layout sazonal de Dia dos Namorados (Hero romântico, escassez e combos). */
-  CAMPANHA_NAMORADOS: true,
-
   /** WhatsApp do vendedor — formato internacional, só números (DDI+DDD+numero). */
   whatsapp: "5517996212158",
 
@@ -15,15 +12,12 @@ export const config = {
 
   /** Cidade de operação. */
   cidade: "Barretos/SP",
-
-  /** Estoque atual da caneca de coração (usado na barra de escassez). */
-  estoqueCanecaCoracao: 11,
-
-  /** Prazo-limite para pedidos com foto (sublimação). Editável para campanhas futuras. */
-  limiteFoto: "2026-06-11T17:00:00",
 };
 
-/** Retorna true enquanto a personalização com foto ainda estiver dentro do prazo. */
+/**
+ * Personalização com foto disponível o ano todo no catálogo padrão.
+ * (O prazo de produção por sublimação é combinado no WhatsApp.)
+ */
 export function fotoPersonalizadaDisponivel(): boolean {
-  return new Date() <= new Date(config.limiteFoto);
+  return true;
 }

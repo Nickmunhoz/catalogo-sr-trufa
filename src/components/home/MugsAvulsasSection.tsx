@@ -10,7 +10,7 @@ export function MugsAvulsasSection() {
             Canecas para chamar de suas
           </h2>
           <p className="mt-3 text-marrom-soft">
-            Também vendidas sem trufas. Personalize com foto (até 11/06) ou frase.
+            Também vendidas sem trufas. Personalize com foto, frase ou arte da loja.
           </p>
         </div>
 

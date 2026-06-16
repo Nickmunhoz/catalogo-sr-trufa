@@ -61,8 +61,8 @@ export function Footer() {
             </a>
           </div>
           <p className="mt-4 text-xs text-creme/60">
-            ⏰ Personalização com foto só até quinta, 11/06, às 17h. Após isso, frase
-            ou arte pronta.
+            ⏰ Personalize com foto, frase ou arte pronta. O prazo de produção é
+            combinado no WhatsApp.
           </p>
         </div>
       </div>
